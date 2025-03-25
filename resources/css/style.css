@@ -108,6 +108,22 @@ header .desktop .list-button {
 }
 
 @media only screen and (max-width: 768px) {
+  header nav ul {
+    justify-content:space-evenly;
+    align-items: center;    
+  }
+
+  nav li {
+    padding-left: 0rem;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  nav a {
+    vertical-align: middle;
+    width: 100%;
+  }
+
   header .desktop .list-button {
     display: block;
     width: 100%;
@@ -431,7 +447,10 @@ header .desktop .list-button {
   /* padding: 5rem  0 5rem  0; */
 }
 
-
+#quotes-section .content.center{
+display: flex;
+justify-content: center;
+}
 #quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
@@ -448,6 +467,10 @@ header .desktop .list-button {
 @media only screen and (max-width: 760px) {
   #quotes-section .content {
     padding: 1.875rem .625rem;
+  }
+
+  .content.center{
+    display: flex;
   }
 
   #quotes-section .quote {
