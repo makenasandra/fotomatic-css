@@ -1,5 +1,5 @@
 /* Universal Styles */
-*{
+* {
   box-sizing: border-box;
 }
 html {
@@ -7,7 +7,7 @@ html {
   font-size: 16px;
 }
 
-body{
+body {
   margin: 0;
 }
 
@@ -55,32 +55,28 @@ header {
   z-index: 5;
   display: flex;
   align-items: center;
-  
 }
 
 header .content {
   display: flex;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding:1rem clamp(1rem, 5vw, 1.875rem);
+  padding: 1rem clamp(1rem, 5vw, 1.875rem);
 }
 
 header .logo {
   flex: 0;
-  color:#4a4a4a;
+  color: #4a4a4a;
   font-size: clamp(1.05rem, 2.5vw, 2rem);
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-weight: 400;
   text-decoration: none;
- 
 }
 
-header.desktop.logo{
+header.desktop.logo {
   width: 200px;
 }
-
 
 header nav ul {
   padding-left: clamp(1rem, 2vw, 2.5rem);
@@ -103,7 +99,7 @@ nav a {
 
 header .icon {
   width: 1.7rem;
-  padding-left: .75rem;
+  padding-left: 0.75rem;
 }
 
 header .mobile {
@@ -120,20 +116,19 @@ header .desktop .follow-button {
 }
 
 @media only screen and (max-width: 768px) {
-
   header nav ul {
-    justify-content:space-between;
-    align-items: center;    
+    justify-content: space-between;
+    align-items: center;
   }
 
   nav li {
-    width: auto;   
+    width: auto;
   }
 
   nav a {
     vertical-align: bottom;
     width: auto;
-    font-size: clamp(.7rem, 2.5vw, 1rem);
+    font-size: clamp(0.7rem, 2.5vw, 1rem);
   }
 
   header .desktop .list-button {
@@ -143,7 +138,7 @@ header .desktop .follow-button {
 
   header .desktop .button {
     display: flex;
-    padding: .1875rem .5rem;
+    padding: 0.1875rem 0.5rem;
     background-color: #9dc20b;
     line-height: 1.6;
     color: white;
@@ -151,7 +146,6 @@ header .desktop .follow-button {
 }
 
 @media only screen and (max-width: 488px) {
-
   header {
     height: 3rem;
   }
@@ -160,16 +154,13 @@ header .desktop .follow-button {
     display: none;
   }
 
-
-
   header .mobile {
     display: block;
     width: 100%;
-    
   }
 
   header .content {
-    padding: .5rem 0;
+    padding: 0.5rem 0;
   }
 
   nav a {
@@ -188,7 +179,7 @@ header .desktop .follow-button {
   }
 
   header .mobile .button {
-    padding: .1875rem .5rem;
+    padding: 0.1875rem 0.5rem;
     background-color: #9dc20b;
     line-height: 1.6;
     color: white;
@@ -205,16 +196,16 @@ header .desktop .follow-button {
   background-image: url("../images/banner-landingpage.jpg");
   background-size: cover;
   width: 100%;
-
 }
 
 #sign-up-cta {
-  padding: 0 clamp(1.875rem, 3.9vw, 5rem) clamp(1.625rem, 5vw, 3.5rem) clamp(1.875rem,  3.9vw, 5rem);
+  padding: 0 clamp(1.875rem, 3.9vw, 5rem) clamp(1.625rem, 5vw, 3.5rem)
+    clamp(1.875rem, 3.9vw, 5rem);
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
-  margin: clamp(6.25rem, 17vw, 10.625rem) auto clamp(6.25rem, 17vw, 10.625rem) clamp(4.375rem, 10vw, 6.25rem);
-
+  margin: clamp(6.25rem, 17vw, 10.625rem) auto clamp(6.25rem, 17vw, 10.625rem)
+    clamp(4.375rem, 10vw, 6.25rem);
 }
 
 #sign-up-cta .content {
@@ -224,7 +215,6 @@ header .desktop .follow-button {
   font-size: 1.25rem;
   line-height: 1.4;
   color: white;
-  
 }
 
 #sign-up-cta h1 {
@@ -255,7 +245,7 @@ header .desktop .follow-button {
 #sign-up-cta .striking {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-  padding-bottom: .75rem;
+  padding-bottom: 0.75rem;
   line-height: 1.4;
   font-size: 3.125rem;
   margin: 0;
@@ -263,7 +253,7 @@ header .desktop .follow-button {
 }
 
 #sign-up-cta .button {
-  margin: 1.625rem auto 0  auto;
+  margin: 1.625rem auto 0 auto;
   padding: 1.25rem 7.25rem;
   width: 25.5rem;
   height: 4rem;
@@ -288,12 +278,13 @@ header .desktop .follow-button {
     background-color: transparent;
     border: none;
     padding: 0;
-    margin: clamp(6.25rem, 17vw, 10.625rem) auto clamp(6.25rem, 17vw, 10.625rem) auto;
+    margin: clamp(6.25rem, 17vw, 10.625rem) auto clamp(6.25rem, 17vw, 10.625rem)
+      auto;
   }
 
   #sign-up-cta .content {
     margin-top: 0;
-    width: auto;  
+    width: auto;
     align-items: center;
     justify-items: center;
     flex-direction: column;
@@ -304,11 +295,11 @@ header .desktop .follow-button {
   }
 
   #sign-up-cta h1 {
-    font-size: clamp(1rem,10vw,3.125rem);
+    font-size: clamp(1rem, 10vw, 3.125rem);
   }
 
   #sign-up-cta h2 {
-    font-size: clamp(1rem,10vw, 2.25rem);
+    font-size: clamp(1rem, 10vw, 2.25rem);
   }
 }
 
@@ -318,11 +309,11 @@ header .desktop .follow-button {
   }
 
   #sign-up-cta .striking {
-    font-size: clamp(1rem,10vw, 2.25rem);
+    font-size: clamp(1rem, 10vw, 2.25rem);
   }
 
   #sign-up-cta h2 {
-    font-size: clamp(1rem,10vw, 2rem);
+    font-size: clamp(1rem, 10vw, 2rem);
   }
 }
 
@@ -342,12 +333,10 @@ header .desktop .follow-button {
   background-color: white;
 }
 
-
-
 .feature .image-container {
   width: 90%;
   height: 65%;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .image-container img {
@@ -356,21 +345,19 @@ header .desktop .follow-button {
   height: auto;
 }
 
-.feature .content{
+.feature .content {
   /* height: 11.6875rem; */
   padding-top: 2.5rem;
 }
 
 .feature h2 {
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
   line-height: 1.2;
   margin: 0;
 }
-
-
 
 .feature h3 {
   font-size: 1rem;
@@ -388,7 +375,7 @@ header .desktop .follow-button {
   }
 
   .feature h3 {
-    font-size: .875rem;
+    font-size: 0.875rem;
     line-height: 1.4;
   }
 }
@@ -404,9 +391,8 @@ header .desktop .follow-button {
     padding: 1rem 0 1.875rem 0;
   }
 
-  .feature.first{
+  .feature.first {
     background-color: lightgrey;
-   
   }
 }
 
@@ -418,9 +404,8 @@ header .desktop .follow-button {
 }
 
 #filters-section .content {
-  padding: 0 .625rem;
+  padding: 0 0.625rem;
   margin-bottom: 5rem;
-  
 }
 
 #filters-section .content h2 {
@@ -441,7 +426,6 @@ header .desktop .follow-button {
   padding: 0 1%;
   display: flex;
 }
-
 
 @media only screen and (max-width: 760px) {
   #filters-section {
@@ -486,14 +470,16 @@ header .desktop .follow-button {
 
 #quotes-section {
   background-color: #f3f3f3;
-  padding: 5rem .625rem;
+  padding: 5rem 0.625rem;
   /* padding: 5rem  0 5rem  0; */
 }
 
-#quotes-section .content.center{
-display: flex;
-justify-content: center;
+#quotes-section .content.center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
+
 #quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
@@ -508,23 +494,34 @@ justify-content: center;
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section .content {
-    padding: 1.875rem .625rem;
+
+  #quotes-section {
+    background-color: #f3f3f3;
+    padding: 2.5rem 0.625rem;
+    /* padding: 5rem  0 5rem  0; */
   }
 
-  .content.center{
+  #quotes-section .content {
+    padding: 1.875rem 0.625rem;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .content.center {
     display: flex;
   }
 
   #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
+    padding-right: 0;
   }
 
   #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
+    height: auto;
   }
 }
 
@@ -538,15 +535,25 @@ footer {
 footer .content {
   color: white;
   display: flex;
-  font-size: .75rem;
+  font-size: 0.75rem;
+  justify-content:space-between;
 }
 
 footer .copyright {
   flex-grow: 1;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (max-width: 760px) {
+  footer{
+    padding: .7rem;
+  }
+  footer .copyright,  footer .location {
+    font-size: 0.625rem;
+  }
+
   footer .content {
-    font-size: .625rem;
+    color: white;
+    display: flex;
+    font-size: 0.75rem;
   }
 }
