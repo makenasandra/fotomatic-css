@@ -205,14 +205,16 @@ header .desktop .follow-button {
   background-image: url("../images/banner-landingpage.jpg");
   background-size: cover;
   width: 100%;
+
 }
 
 #sign-up-cta {
-  padding: 0 5rem 3.5rem 5rem;
+  padding: 0 clamp(1.875rem, 3.9vw, 5rem) clamp(1.625rem, 5vw, 3.5rem) clamp(1.875rem,  3.9vw, 5rem);
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
-  margin: 10.625rem auto 10.625rem 6.25rem;
+  margin: clamp(6.25rem, 17vw, 10.625rem) auto clamp(6.25rem, 17vw, 10.625rem) clamp(4.375rem, 10vw, 6.25rem);
+
 }
 
 #sign-up-cta .content {
@@ -285,10 +287,16 @@ header .desktop .follow-button {
     height: auto;
     background-color: transparent;
     border: none;
+    padding: 0;
+    margin: clamp(6.25rem, 17vw, 10.625rem) auto clamp(6.25rem, 17vw, 10.625rem) auto;
   }
 
   #sign-up-cta .content {
     margin-top: 0;
+    width: auto;  
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
   }
 
   #sign-up-cta .email {
@@ -296,11 +304,11 @@ header .desktop .follow-button {
   }
 
   #sign-up-cta h1 {
-    font-size: 3.125rem;
+    font-size: clamp(1rem,10vw,3.125rem);
   }
 
   #sign-up-cta h2 {
-    font-size: 2.25rem;
+    font-size: clamp(1rem,10vw, 2.25rem);
   }
 }
 
@@ -309,14 +317,12 @@ header .desktop .follow-button {
     height: 20rem;
   }
 
- 
-
-  #sign-up-cta h1 {
-    font-size: 2.25rem;
+  #sign-up-cta .striking {
+    font-size: clamp(1rem,10vw, 2.25rem);
   }
 
   #sign-up-cta h2 {
-    font-size: 2rem;
+    font-size: clamp(1rem,10vw, 2rem);
   }
 }
 
@@ -395,7 +401,12 @@ header .desktop .follow-button {
 
   .feature {
     margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
+    padding: 1rem 0 1.875rem 0;
+  }
+
+  .feature.first{
+    background-color: lightgrey;
+   
   }
 }
 
